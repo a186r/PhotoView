@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_120"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginRight="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_12"
+        android:background="@drawable/border_radius_bg">
+
+        <ImageView
+            android:id="@+id/iv_kindergarten_img"
+            android:layout_width="@dimen/width_140"
+            android:layout_height="@dimen/height_100"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@mipmap/kindergarten_img" />
+
+        <TextView
+            android:id="@+id/tv_kindergarten_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_toRightOf="@id/iv_kindergarten_img"
+            android:text="@string/kindergarten_name"
+            android:textSize="@dimen/txt_16" />
+
+        <RelativeLayout
+            android:id="@+id/rl_kindergarten_likelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_24"
+            android:layout_below="@id/tv_kindergarten_name"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_6"
+            android:layout_toRightOf="@id/iv_kindergarten_img">
+
+            <ImageView
+                android:id="@+id/iv_kindergarten_likeicon"
+                android:layout_width="@dimen/width_15"
+                android:layout_height="@dimen/height_15"
+                android:layout_centerVertical="true"
+                android:background="@android:color/holo_blue_dark" />
+
+            <TextView
+                android:id="@+id/tv_kindergarten_likenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_toRightOf="@+id/iv_kindergarten_likeicon"
+                android:text="@string/kindergarten_likenum" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_kindergarten_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_kindergarten_likelayout"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_toRightOf="@id/iv_kindergarten_img"
+            android:text="@string/kindergarten_address" />
+
+        <RelativeLayout
+            android:id="@+id/rl_kindergarten_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rl_kindergarten_likelayout"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_24">
+
+            <TextView
+                android:id="@+id/tv_kindergarten_distancenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kindergarten_distancenum" />
+
+            <TextView
+
+                android:layout_toRightOf="@+id/tv_kindergarten_distancenum"
+                android:id="@+id/tv_kindergarten_distanceunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kindergarten_distanceunit" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

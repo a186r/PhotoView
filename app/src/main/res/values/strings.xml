@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">PhotoView</string>
+    <string name="app_name">ViewDemo</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!--kindergarten-->
+    <string name="kindergarten_name">达令国际幼儿园</string>
+    <string name="kindergarten_likenum">800</string>
+    <string name="kindergarten_address">团结湖</string>
+    <string name="kindergarten_distancenum">1.2</string>
+    <string name="kindergarten_distanceunit">km</string>
 </resources>
