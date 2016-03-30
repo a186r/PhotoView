@@ -8,9 +8,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/lv_kindergarten"
+    <Button
+        android:id="@+id/btn_tolist"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:text="to listview"/>
 
 </RelativeLayout>
